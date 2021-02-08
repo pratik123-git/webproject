@@ -59,7 +59,7 @@ html{
 @keyframes rot{
     0%{
         transform: rotate(0deg);
-
+ 
     }
     100%{
 
@@ -104,6 +104,7 @@ color:var(--main-color);
 }
 .main_header_left button:hover{
     box-shadow: 0 8px 6px -6px var(--main-color);
+    width:50%;
 
 }
 

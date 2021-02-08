@@ -2,7 +2,7 @@ const express=require('express');
 const app=express();
 const path=require('path');
 const hbs=require("hbs");
-const  port=process.env.PORT || 927
+const  port=process.env.PORT || 917
 
 //public static path
 
@@ -29,5 +29,5 @@ app.get("*",(req,res)=>{
     });  
 });  
 app.listen(port,()=>{
-    console.log("lsiten to the port");
-});
+    console.log(`listen to the port ${port}`);
+}); 
