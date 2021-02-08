@@ -2,7 +2,7 @@ const express=require('express');
 const app=express();
 const path=require('path');
 const hbs=require("hbs");
-const  port=process.env.PORT || 907
+const  port=process.env.PORT || 927
 
 //public static path
 
@@ -25,7 +25,7 @@ app.get("/weather",(req,res)=>{
 });  
 app.get("*",(req,res)=>{
     res.render("404error",{
-        errorMsg:"Oops! Page Not Found"
+        errorMsg:"Oops! Page Not Found,click here to go back"
     });  
 });  
 app.listen(port,()=>{
