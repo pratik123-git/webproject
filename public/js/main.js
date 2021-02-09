@@ -6,7 +6,7 @@ const temp_state=document.getElementById("temp_status");
 
 const getInfo=async(event)=>{
     event.preventDefault();
-let url=`http://api.openweathermap.org/data/2.5/weather?q=Pune&appid=046a6295406e175a3f8b2695d5d3de4c`;
+// let url=`http://api.openweathermap.org/data/2.5/weather?q=Pune&appid=046a6295406e175a3f8b2695d5d3de4c`;
 let cityVal=cityname.value;
 
 if(cityVal===""){
@@ -17,7 +17,7 @@ else{
     try{
 
     
-    let url=`http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&appid=046a6295406e175a3f8b2695d5d3de4c`;
+    let url=`http://api.openweathermap.org/data/2.5/weather?q=${cityVal}&units=metric&appid=046a6295406e175a3f8b2695d5d3de4c`;
     const response=await fetch(url);
     const data=await response.json();
     console.log(data);  
